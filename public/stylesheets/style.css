@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lavender;
+  font-family: cursive;
+}
+input {
+  background-color: aliceblue;
+  border-color: aqua;
+}
+button{
+  background-color: #f7ebff;
+}
+
+a {
+  color: #00B7FF;
+}
