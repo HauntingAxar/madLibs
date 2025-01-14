@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  h1 Enter Your Words
+  form(method="POST" action="/story" id="words")
+    label(for="noun1") Noun 1:
+    input(type="text" name="noun1" id="noun1")
+    label(for="noun2") Noun 2:
+    input(type="text" name="noun2" id="noun2")
+    label(for="noun3") Noun 3:
+    input(type="text" name="noun3" id="noun3")
+    label(for="noun4") Noun 4:
+    input(type="text" name="noun4" id="noun4")
+    label(for="noun5") Noun 5:
+    input(type="text" name="noun5" id="noun5")
+    br
+    label(for="verb1") Verb 1:
+    input(type="text" name="verb1" id="verb1")
+    label(for="verb2") Verb 2:
+    input(type="text" name="verb2" id="verb2")
+    label(for="verb3") Verb 3:
+    input(type="text" name="verb3" id="verb3")
+    br
+    label(for="adjective1") Adjective 1:
+    input(type="text" name="adjective1" id="adjective1")
+    label(for="adjective2") Adjective 2:
+    input(type="text" name="adjective2" id="adjective2")
+    br
+    label(for="storyChoice") Choose One
+    select(form="words" name="storyChoice" id="storyChoice")
+      option(value = "1") Story 1
+      option(value = "2") Story 2
+      option(value = "3") Story 3
+    br
+    button(type="submit" form="words") Tell Me a Story
